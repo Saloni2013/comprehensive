@@ -13,13 +13,13 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import com.mindtree.exceptions.UtilityException;
 
 public class ExcelSheetRead extends GetProperties {
-	public static Map<String,String> excelData;
+	public static HashMap<String,String> excelData;
 	public ExcelSheetRead() throws Exception {
 		super();
 		if(excelData==null)
 		{
 			try {
-				excelData=new HashMap<>();
+				excelData=new HashMap<String,String>();
 			FileInputStream file=new FileInputStream(get.getProperty("excel"));
 			XSSFWorkbook excelBook=new XSSFWorkbook(file);
 			for(int i=0;i<excelBook.getNumberOfSheets();i++)
