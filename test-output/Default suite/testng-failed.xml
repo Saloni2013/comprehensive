@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.mindtree.runner.GiftRunner">
+        <methods>
+          <include name="PersonalizeGift"/>
+          <include name="homeDecor"/>
+          <include name="ChristmasGift"/>
+          <include name="Gifts"/>
+          <include name="SecretSantaGift"/>
+          <include name="LogIn"/>
+          <include name="validateTitle"/>
+          <include name="WhtsNewGift"/>
+          <include name="cartValidate"/>
+          <include name="initializeDriver"/>
+          <include name="cropDetailSubmit"/>
+        </methods>
+      </class> <!-- com.mindtree.runner.GiftRunner -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
