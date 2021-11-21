@@ -31,7 +31,7 @@ public class CartPage extends CartPageUi{
 		if(driver.findElement(formCart).isDisplayed())
 		{
 			List<WebElement>cartList=driver.findElements(resultHeader);
-			Set<String>cartSet=new HashSet<>();
+			Set<String>cartSet=new HashSet<String>();
 			for(WebElement temp:cartList)
 			{
 				cartSet.add(temp.getText());
